@@ -948,4 +948,161 @@ a:hover, a:active {
         .about .about-description .container .description .text-holder {
           padding-bottom: 10px; }
 
+.skills {
+  margin-bottom: 100px; }
+  .skills .section-header {
+    margin-bottom: 100px; }
+    .skills .section-header .section-title {
+      font-size: 2.5rem;
+      line-height: 1.15rem;
+      font-weight: 600;
+      font-family: " 'Raleway', sans-serif ";
+      color: #404040;
+      text-transform: uppercase;
+      text-align: center;
+      position: relative; }
+      .skills .section-header .section-title:after {
+        content: '';
+        position: absolute;
+        top: 300%;
+        left: 50%;
+        -webkit-transform: translate(-50%, 0);
+        -moz-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+        width: 70px;
+        height: 4px;
+        background: #0e68cf; }
+  .skills .skills-holder {
+    display: flex; }
+    .skills .skills-holder .skill {
+      width: 50%; }
+      .skills .skills-holder .skill .title {
+        font-size: 1.4rem;
+        line-height: 1.15rem;
+        font-weight: 600;
+        color: #404040;
+        text-transform: uppercase;
+        margin-bottom: 60px;
+        position: relative; }
+        .skills .skills-holder .skill .title:after {
+          content: '';
+          position: absolute;
+          top: 190%;
+          left: 0%;
+          -webkit-transform: translate(0%, 0);
+          -moz-transform: translate(0%, 0);
+          transform: translate(0%, 0);
+          width: 70px;
+          height: 4px;
+          background: #0e68cf; }
+      .skills .skills-holder .skill .bar {
+        width: 550px;
+        margin-bottom: 14px;
+        background: #999999;
+        position: relative; }
+        .skills .skills-holder .skill .bar .bar-fill {
+          background: #0e68cf;
+          padding: 2px 0;
+          font-size: 0.85rem;
+          line-height: 1.333rem;
+          font-weight: 500;
+          letter-spacing: 1px; }
+          .skills .skills-holder .skill .bar .bar-fill .bar-title {
+            padding: 4px 0;
+            background: #0b509f;
+            color: #fff; }
+        .skills .skills-holder .skill .bar .numb {
+          position: absolute;
+          top: 50%;
+          right: 0;
+          -webkit-transform: translate(0, -50%);
+          -moz-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+          margin-right: 14px; }
+        .skills .skills-holder .skill .bar .html {
+          width: 80%; }
+          .skills .skills-holder .skill .bar .html .bar-title {
+            padding: 4px 50px; }
+        .skills .skills-holder .skill .bar .css {
+          width: 82%; }
+          .skills .skills-holder .skill .bar .css .bar-title {
+            padding: 4px 54px; }
+        .skills .skills-holder .skill .bar .sass {
+          width: 70%; }
+          .skills .skills-holder .skill .bar .sass .bar-title {
+            padding: 4px 50px; }
+        .skills .skills-holder .skill .bar .js {
+          width: 50%; }
+          .skills .skills-holder .skill .bar .js .bar-title {
+            padding: 4px 35px; }
+        .skills .skills-holder .skill .bar .Jquery {
+          width: 60%; }
+          .skills .skills-holder .skill .bar .Jquery .bar-title {
+            padding: 4px 48px; }
+        .skills .skills-holder .skill .bar .Wordpress {
+          width: 50%; }
+          .skills .skills-holder .skill .bar .Wordpress .bar-title {
+            padding: 4px 35px; }
+        .skills .skills-holder .skill .bar .xd {
+          width: 70%; }
+          .skills .skills-holder .skill .bar .xd .bar-title {
+            padding: 4px 60px; }
+    .skills .skills-holder .dev-t {
+      width: 50%;
+      text-align: center; }
+      .skills .skills-holder .dev-t .title {
+        font-size: 1.4rem;
+        line-height: 1.15rem;
+        font-weight: 600;
+        color: #404040;
+        text-transform: uppercase;
+        margin-bottom: 60px;
+        position: relative; }
+        .skills .skills-holder .dev-t .title:after {
+          content: '';
+          position: absolute;
+          top: 190%;
+          left: 50%;
+          -webkit-transform: translate(-50%, 0);
+          -moz-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+          width: 70px;
+          height: 4px;
+          background: #0e68cf; }
+      .skills .skills-holder .dev-t ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        font-weight: 600;
+        color: #404040; }
+        .skills .skills-holder .dev-t ul li {
+          margin-bottom: 30px;
+          position: relative; }
+          .skills .skills-holder .dev-t ul li:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 24%;
+            -webkit-transform: translate(0, -50%);
+            -moz-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: #0e68cf; }
+          .skills .skills-holder .dev-t ul li:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 24%;
+            -webkit-transform: translate(0, -50%);
+            -moz-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: #0e68cf; }
+
 /*# sourceMappingURL=style.css.map */

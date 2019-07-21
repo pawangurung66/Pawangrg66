@@ -1,0 +1,229 @@
+.skills{
+	margin-bottom: 100px;
+
+	.section-header{
+		margin-bottom: 100px;
+
+		.section-title{
+			font-size: 2.5rem;
+			line-height: 1.15rem;
+			font-weight: 600;
+			font-family: font(primary);
+			color: color(font-color);
+			text-transform: uppercase;
+			text-align: center;
+			position: relative;
+
+			&:after{
+				content: '';
+				position: absolute;
+				top: 300%;
+				left: 50%;
+				@include translate(-50%, 0);
+				width: 70px;
+				height: 4px;
+				background: color(primary);
+			}
+
+		}//title
+
+	}//section-header
+
+	.skills-holder{
+		display: flex;
+
+		.skill{
+			width: 50%;
+
+			.title{
+				font-size: 1.4rem;
+				line-height: 1.15rem;
+				font-weight: 600;
+				color: color(font-color);
+				text-transform: uppercase;
+				margin-bottom: 60px;
+				position: relative;
+
+				&:after{
+					content: '';
+					position: absolute;
+					top: 190%;
+					left: 0%;
+					@include translate(0%, 0);
+					width: 70px;
+					height: 4px;
+					background: color(primary);
+				}
+			}
+
+			.bar{
+				width: 550px;
+				margin-bottom: 14px;
+				background: color(white-dark);
+				position: relative;
+
+				.bar-fill{
+					background: color(primary);
+					padding: 2px 0;
+					font-size: 0.85rem;
+					line-height: 1.333rem;
+					font-weight: 500;
+					letter-spacing: 1px;
+
+					.bar-title{
+						padding: 4px 0;
+						background: color(primary-dark);
+						color: color(white-color);
+					}
+
+
+				}//fill
+
+				.numb{
+					position: absolute;
+					top: 50%;
+					right: 0;
+					@include translate(0, -50%);
+					margin-right: 14px;
+				}
+
+				.html{
+					width: 80%;
+
+					.bar-title{
+						padding: 4px 50px;
+					}
+
+				}//html
+
+				.css{
+					width: 82%;
+
+					.bar-title{
+						padding: 4px 54px;
+					}
+
+				}//css
+
+				.sass{
+					width: 70%;
+
+					.bar-title{
+						padding: 4px 50px;
+					}
+
+				}//sass
+
+				.js{
+					width: 50%;
+
+					.bar-title{
+						padding: 4px 35px;
+					}
+
+				}//js
+
+
+				.Jquery{
+					width: 60%;
+
+					.bar-title{
+						padding: 4px 48px;
+					}
+
+				}//jquery
+
+				.Wordpress{
+					width: 50%;
+
+					.bar-title{
+						padding: 4px 35px;
+					}
+
+				}//Wordpress
+
+				.xd{
+					width: 70%;
+
+					.bar-title{
+						padding: 4px 60px;
+					}
+
+				}//Wordpress
+
+			}//bar
+
+		}//skill
+
+		.dev-t{
+			width: 50%;
+			text-align: center;
+
+			.title{
+				font-size: 1.4rem;
+				line-height: 1.15rem;
+				font-weight: 600;
+				color: color(font-color);
+				text-transform: uppercase;
+				margin-bottom: 60px;
+				position: relative;
+
+				&:after{
+					content: '';
+					position: absolute;
+					top: 190%;
+					left: 50%;
+					@include translate(-50%, 0);
+					width: 70px;
+					height: 4px;
+					background: color(primary);
+				}
+
+			}//title
+	
+			ul{
+				padding: 0;
+				margin: 0;
+				list-style: none;
+				font-size: 1.4rem;
+				line-height: 1.6rem;
+				font-weight: 600;
+				color: color(font-color);
+
+				li{
+					margin-bottom: 30px;
+					position: relative;
+
+					&:after{
+						content: '';
+						position: absolute;
+						top: 50%;
+						right: 24%;
+						@include translate(0, -50%);
+						width: 30px;
+						height: 30px;
+						border-radius: 50%;
+						background: color(primary);
+					 }
+
+					&:before{
+						content: '';
+						position: absolute;
+						top: 50%;
+						left: 24%;
+						@include translate(0, -50%);
+						width: 30px;
+						height: 30px;
+						border-radius: 50%;
+						background: color(primary);
+					}
+				}
+
+			}//ul
+
+		}//dev-t
+
+	}//holder
+
+}//skills
+
