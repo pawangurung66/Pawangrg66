@@ -1,0 +1,82 @@
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+a {
+	color: color(white-color);
+	text-decoration: none;
+}
+
+a:hover,
+a:focus {
+	text-decoration: underline;
+	color: color(primary);
+}
+
+a:focus {
+	outline: thin dotted;
+}
+
+a:hover, a:active {
+	outline: 0;
+}
+
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+.main-navigation{
+	position: fixed;
+	left: 50%;
+	width: 100vw;
+	@include translate(-50%, 0);
+	padding: 2rem 0;
+	text-align: center;
+	background: rgba(93, 93, 93, 0.24);
+
+	ul{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+		justify-content: center;
+		font-size: 1.5rem;
+		line-height: 1.208rem;
+		letter-spacing: 1px;
+
+		li{
+			margin-right: 50px;
+
+			a:hover,
+			&:focus{
+				color: color(primary);
+				text-decoration: none;
+			}
+
+			.current{
+				color: color(primary);
+			}
+
+			.contact{
+				padding: 10px 14px;
+				border: 1px solid color(primary);
+				color: color(primary);
+
+				&:hover,
+				&:focus{
+					color: color(white-color);
+					border-color: color(white-color);
+				}
+
+			}//contact
+
+			&:last-child{
+				margin: 0;
+			}
+
+		}//li
+
+	}//ul
+
+}//main-nav

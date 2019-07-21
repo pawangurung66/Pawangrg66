@@ -1,0 +1,19 @@
+$colors:(
+	primary: #0e68cf,
+	primary-light: lighten(#0e68cf, 20%),
+	primary-dark: darken(#0e68cf, 5%),
+	secondary: #ED093E,
+	white-color: #fff,
+	black-color: #000,
+	white-dark: darken(#fff, 40%),
+	white-light: lighten(#fff, 6%),
+	black-dark: darken(#000, 40%),
+	black-light: lighten(#000, 50%),
+	font-color: #404040,
+	footer-bg-color: #EE2655,
+	section-bg-color: #f6f6f6,
+);
+
+$font:(
+	primary: " 'Raleway', sans-serif ",
+);

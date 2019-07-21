@@ -1,0 +1,73 @@
+.site-header{
+
+	.text-site{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		@include translate(-50%, -50%);
+		font-family: font(primary);
+		color: color(white-color);
+
+		.site-title{
+			font-size: 3.125rem;
+			line-height: 3.08rem;
+			font-weight: 500;
+			letter-spacing: 1px;
+			margin: 0;
+			animation: type 3s steps(22) 1;
+			overflow: hidden;
+			white-space: nowrap;
+
+			&:after{
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 55px;
+				border-right: 2px solid color(white-color);
+				@include animation( type 3s steps(22) 1);
+			}
+		}
+
+		.highlight{
+			color: color(primary);
+			font-weight: 600;
+		}
+
+		.site-description{
+			font-size: 2.188rem;
+			line-height: 2.143rem;
+			font-weight: 500;
+			letter-spacing: 1px;
+			text-align: center;
+			margin: 20px 0 0;
+			position: relative;
+			@include animation( visible 1s backwards ease 1);
+			animation-delay: 3s;
+		}
+
+	}//text-site
+
+}//site-header
+
+/* ------------------------------------
+ Some Key Frames
+ -------------------------------------- */
+
+@include keyframes (type){
+	0%{
+		width: 0ch;
+	}
+
+	100%{
+		width: 25ch;
+	}
+}
+
+@include keyframes (visible){
+	0%{
+        opacity: 0;
+    }
+}
+

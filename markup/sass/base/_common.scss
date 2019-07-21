@@ -1,0 +1,47 @@
+/*==========================
+ Common style
+===========================*/
+.site{
+	background: color(white-color);
+}
+
+.custom-background .site{
+	margin: 0 20px;
+}
+
+.container{
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.container:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.row{
+	margin: 0 -15px;
+}
+
+.row:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.clearfix{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.bg-wrapper{
+	position: relative;
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/img1.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100vh;
+}

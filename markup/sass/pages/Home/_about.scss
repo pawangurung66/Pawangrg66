@@ -1,0 +1,145 @@
+.about{
+	margin: 100px 0;
+
+	.section-header{
+		margin-bottom: 100px;
+
+		.section-title{
+			font-size: 2.5rem;
+			line-height: 1.15rem;
+			font-weight: 600;
+			font-family: font(primary);
+			color: color(font-color);
+			text-transform: uppercase;
+			text-align: center;
+			position: relative;
+
+			&:after{
+				content: '';
+				position: absolute;
+				top: 300%;
+				left: 50%;
+				@include translate(-50%, 0);
+				width: 70px;
+				height: 4px;
+				background: color(primary);
+			}
+
+		}//title
+
+
+	}//section-header
+
+	.row{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		text-align: center;
+		margin: 0 -8px 80px -8px;
+
+		.items{
+			width: 20%;
+
+			.icon-holder{
+				font-size: 4rem;
+				color: color(section-bg-color);
+				padding: 20px 0;
+				background: color(black-light);
+				@include translate(0, 75px);
+				@include transition(ease 0.3s);
+
+				.title{
+					font-size: 1.2rem;
+					line-height: 1.12rem;
+					color: color(section-bg-color);
+					font-family: font(primary);
+					margin: 10px 0 0;
+					letter-spacing: 1px;
+				}
+
+			}//icon
+
+			.content{
+				padding: 21px 13px;
+				font-size: 0.8rem;
+				line-height: 1rem;
+				color: color(font-color);
+				box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+					
+				p{
+					margin: 0;
+				}
+		
+			}//content
+
+			&:hover .icon-holder{
+				font-size: 4rem;
+				color: color(section-bg-color);
+				padding: 20px 0;
+				background: color(primary-light);
+				@include translate(0, 0px);
+
+			}
+
+		}//items
+
+	}//row
+
+	.about-description{
+		background: color(section-bg-color);
+		padding: 60px 0;
+
+		.container{
+			display: flex;
+
+			.img-holder{
+				@include border-radius(5px);
+				text-align: right;
+
+				img{
+					vertical-align: top;
+					border-radius: 10px;
+					width: 80%;
+				}
+				
+
+			}//img-holder
+			
+			.description{
+				text-align: center;
+				width: 50%;
+				vertical-align: center;
+				margin: 57px 0 0 75px;
+
+				.title{
+					font-size: 2.2rem;
+					line-height: 2rem;
+					letter-spacing: 1px;
+					color: color(font-color);
+					margin: 0 0 60px;
+					position: relative;
+
+					&:after{
+						content: '';
+						position: absolute;
+						top: 155%;
+						left: 50%;
+						@include translate(-50%, 0);
+						width: 70px;
+						height: 4px;
+						background: color(primary);
+					}
+
+				}//title
+
+				.text-holder{
+					padding-bottom: 10px;
+				}
+
+			}//description
+
+		}//cont
+
+	}//about-description
+
+}//about
