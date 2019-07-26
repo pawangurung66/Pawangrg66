@@ -56,12 +56,13 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
+	font-size: 0.8rem;
 	color: #86919d;
 	border: 1px solid #dae1e7;
 	border-radius: 4px;
 	padding: 10px 15px;
-	font-size: 0.8em;
 	outline: none;
+	width: 450px;
 }
 
 input[type="text"]:focus,
@@ -88,7 +89,7 @@ select {
 }
 
 textarea {
-	width: 100%;
+	width: 450px;
 	height: 180px;
 	resize: vertical;
 }
