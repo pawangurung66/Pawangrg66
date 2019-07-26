@@ -37,6 +37,31 @@
 	clear: both;
 }
 
+
+@include media(md){					//container width at max-width: 1200px
+	.container{
+		max-width: 970px;
+	}
+}
+
+@include media(sm){					//container width at max-width: 1024px
+	.container{
+		max-width: 750px;			
+	}
+}
+
+@include media(xs){					//container width at max-width: 767px
+	.container{
+		max-width: 384px;
+	}
+}
+
+@include media(mb){					//container width at max-width: 450px
+	.container{
+		max-width: 100%;
+	}
+}
+
 .bg-wrapper{
 	position: relative;
 	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/img1.jpg);

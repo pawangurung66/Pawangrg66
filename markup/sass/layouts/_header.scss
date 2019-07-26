@@ -17,6 +17,16 @@
 			animation: type 3s steps(22) 1;
 			overflow: hidden;
 			white-space: nowrap;
+			@include media(xs){
+				font-size: 2.2rem;
+				line-height: 3rem;
+			}
+
+			@include media(mb){
+				font-size: 1.40rem;
+				line-height: 2rem;
+			}
+
 
 			&:after{
 				content: '';
@@ -27,6 +37,9 @@
 				height: 55px;
 				border-right: 2px solid color(white-color);
 				@include animation( type 3s steps(22) 1);
+				@include media(xs){
+					height: 40px;
+				}
 			}
 		}
 
@@ -45,6 +58,15 @@
 			position: relative;
 			@include animation( visible 1s backwards ease 1);
 			animation-delay: 3s;
+			@include media(xs){
+				font-size: 1.6rem;
+				line-height: 1.10rem;
+			}
+
+			@include media(mb){
+				font-size: 1rem;
+				line-height: 1.66rem;
+			}
 		}
 
 	}//text-site

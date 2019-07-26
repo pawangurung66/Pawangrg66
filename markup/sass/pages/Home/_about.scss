@@ -95,6 +95,9 @@
 			.img-holder{
 				@include border-radius(5px);
 				text-align: right;
+				@include media(mb){
+					text-align: center;
+				}
 
 				img{
 					vertical-align: top;
@@ -143,3 +146,66 @@
 	}//about-description
 
 }//about
+
+/* ======================================
+ Media Query
+ ======================================= */
+
+ @include media(sm){
+ 	.about{
+		
+		.row{
+			
+			.items{
+				width: 50%;
+				padding: 35px;
+				@include media(xs){
+					width: 100%;
+					padding: 0 35px 35px;
+				}
+
+				.icon-holder{
+					color: color(section-bg-color);
+					padding: 20px 0;
+					background: color(primary-light);
+					@include translate(0, 0px);
+				}
+
+				.content{
+					font-size: 1rem;
+				}
+
+			}//items
+
+		}//row 
+			
+		.about-description{  
+
+			.container{
+				@include media(xs){
+					flex-wrap: wrap;
+				}
+
+				.description{ 
+					@include media(xs){
+						width: 100%;
+						margin-left: 0;
+					}
+
+					.title{
+						font-size: 2rem;
+					}
+
+					.btns a{
+						padding: 14px 22px;
+					}
+
+				}//description
+
+			}//cont
+
+		}//about-descrip
+
+ 	}//about
+
+ }//media

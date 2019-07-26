@@ -33,6 +33,29 @@ jQuery(document).ready(function($){
 	});
 	//End of Porfolio btn function.
 
+
+	//Toggle btn menu
+	$('#toggle-btn').click(function(){
+  		$('#toggle-btn').toggleClass('active');
+  		$('body').toggleClass('open-menu')
+  	});
+
+  	
+  	// When we click on navigation link it should close the menu and
+  	//it should change the Btn close menu again to Hamberger menu-----
+  	
+  	$('.main-navigation li a').click(function(){
+  		$('#toggle-btn').toggleClass('active');
+  		$('body').removeClass('open-menu')
+  	});
+
+  	$('.overlay').click(function(){
+  		$('#toggle-btn').toggleClass('active');
+  		$('body').removeClass('open-menu')
+  	});
+
+  	// End of Toggle menu js
+
 	var $grid = $("body .portfolio .row").isotope({
 	  itemSelector: ".portfolio .row .col",
 	  layoutMode: "fitRows"
@@ -50,3 +73,23 @@ jQuery(document).ready(function($){
 	new WOW().init();
 
 })
+
+//To the top btn js
+
+$(document).ready(function($){
+	$(window).scroll(function(){
+	 if($(this).scrollTop() > 40) {
+	$('.to-top').fadeIn();
+  }   else{
+	$('.to-top').fadeOut();
+  }
+
+});
+	$('.to-top').click(function(){
+		$('html , body').animate({scrollTop: 0}, 800);
+	});
+
+});
+
+
+	//End of To the top btn js

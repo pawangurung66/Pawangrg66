@@ -63,6 +63,9 @@ textarea {
 	padding: 10px 15px;
 	outline: none;
 	width: 450px;
+	@include media(xs){
+		width: 300px;
+	}
 }
 
 input[type="text"]:focus,
@@ -92,4 +95,7 @@ textarea {
 	width: 450px;
 	height: 180px;
 	resize: vertical;
+	@include media(xs){
+		width: 300px;
+	}
 }

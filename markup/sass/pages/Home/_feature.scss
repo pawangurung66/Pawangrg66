@@ -61,6 +61,9 @@
 				margin-bottom: 14px;
 				background: color(white-dark);
 				position: relative;
+				@include media(xs){
+					width: 300px;
+				}
 
 				.bar-fill{
 					background: color(primary);
@@ -92,33 +95,54 @@
 
 					.bar-title{
 						padding: 4px 50px;
+						@include media(xs){
+							padding: 5px 25px;
+						}
 					}
 
 				}//html
 
 				.css{
 					width: 82%;
+					@include media(xs){
+						width: 84%;
+					}
 
 					.bar-title{
 						padding: 4px 54px;
+						@include media(xs){
+							padding: 4px 30px;
+						}
 					}
 
 				}//css
 
 				.sass{
 					width: 70%;
+					@include media(xs){
+						
+					}
 
 					.bar-title{
 						padding: 4px 50px;
+						@include media(xs){
+							padding: 4px 26px;
+						}
 					}
 
 				}//sass
 
 				.js{
 					width: 50%;
+					@include media(xs){
+						
+					}
 
 					.bar-title{
 						padding: 4px 35px;
+						@include media(xs){
+							padding: 5px 9px;
+						}
 					}
 
 				}//js
@@ -126,27 +150,45 @@
 
 				.Jquery{
 					width: 60%;
+					@include media(xs){
+						
+					}
 
 					.bar-title{
 						padding: 4px 48px;
+						@include media(xs){
+							padding: 5px 23px;
+						}
 					}
 
 				}//jquery
 
 				.Wordpress{
 					width: 50%;
+					@include media(xs){
+						
+					}
 
 					.bar-title{
 						padding: 4px 35px;
+						@include media(xs){
+							padding: 5px 8px;
+						}
 					}
 
 				}//Wordpress
 
 				.xd{
 					width: 70%;
+					@include media(xs){
+						
+					}
 
 					.bar-title{
-						padding: 4px 60px;
+						padding: 5px 37px;
+						@include media(xs){
+						
+						}
 					}
 
 				}//Wordpress
@@ -229,4 +271,34 @@
 	}//holder
 
 }//skills
+
+
+/* ==============================
+ Feature Section Media Query
+================================= */
+@include media(sm){
+
+	.skills{ 
+
+		.skills-holder{ 
+			flex-wrap: wrap;
+
+			.skill{
+				width: 100%;
+				margin: 0 0 40px 100px;
+				@include media(xs){
+					margin-left: 0;
+				}
+
+			}//skill
+
+			.dev-t{
+				width: 100%;
+			}
+
+		}//skill-holder
+
+	}//skills
+
+}//media
 
