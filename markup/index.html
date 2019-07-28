@@ -19,11 +19,10 @@
 					</div>
 					<nav class="main-navigation">
 						<ul>
-							<li><a class="current" href="#">Home</a></li>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Skills</a></li>
-							<li><a href="#">Portfolio</a></li>
-							<li><a  class="contact" href="#">Contact</a></li>
+							<li><a href="#about-section">About</a></li>
+							<li><a href="#skills-section">Skills</a></li>
+							<li><a href="#portfolio-section">Portfolio</a></li>
+							<li><a class="contact" href="#footer-section">Contact</a></li>
 						</ul> 
 					</nav>
 					<div id="toggle-btn"> 
@@ -181,7 +180,7 @@
 					<button data-filter="*">All</button>
 					<button data-filter=".landing">landing page</button>
 					<button data-filter=".portfolio">Portfolio</button>
-					<button data-filter=".e-commerce">E commerce</button>
+					<button data-filter=".e-commerce">Blog</button>
 					<button data-filter=".one-page">One page</button>	
 				</div>
 				<div class="row">
@@ -199,8 +198,8 @@
 						<div class="bg-img b-2"></div>
 						<div class="holder">
 							<a id="second-btn" class="readmore-btn" href="#open">Readmore</a>
-							<a href="#">Demo</a>
-							<a href="#">Github</a>
+							<a href="https://pawangurung66.github.io/Blossom/">Demo</a>
+							<a href="https://github.com/pawangurung66/Blossom">Github</a>
 						</div>
 					</div>
 					<div class="col portfolio landing wow fadeInUp" 
@@ -209,7 +208,7 @@
 						<div class="holder">
 							<a id="third-btn" class="readmore-btn" href="#open">Readmore</a>
 							<a href="https://pawangurung66.github.io/Prodigious-Portfolio/">Demo</a>
-							<a href="#">Github</a>
+							<a href="https://github.com/pawangurung66/Prodigious-Portfolio">Github</a>
 						</div>
 					</div>
 					<div class="col e-commerce portfolio wow fadeInUp" 
@@ -226,36 +225,6 @@
 			<div id="open" class="full-info first-content">
 				<img src="images/img8.png" alt="">
 				<div class="content">
-					<h2 class="title">Prodisious-portfolio</h2>
-					<div class="tags">
-						<span>HTMl</span>
-						<span>CSS</span>
-						<span>JQUERY</span>
-						<span>SASS</span>
-					</div>
-					<div class="text-holder">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam asperiores nulla error, itaque recusandae distinctio delectus doloribu</p>
-					</div>
-				</div>
-			</div>
-			<div id="open" class="full-info second-content">
-				<img src="images/img7.png" alt="">
-				<div class="content">
-					<h2 class="title">Minimal Blog</h2>
-					<div class="tags">
-						<span>HTMl</span>
-						<span>CSS</span>
-						<span>JQUERY</span>
-						<span>SASS</span>
-					</div>
-					<div class="text-holder">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam asperiores nulla error, itaque recusandae distinctio delectus doloribu</p>
-					</div>
-				</div>
-			</div>
-			<div id="open" class="full-info third-content">
-				<img src="images/img6.png" alt="">
-				<div class="content">
 					<h2 class="title">Omega Travel</h2>
 					<div class="tags">
 						<span>HTMl</span>
@@ -264,7 +233,36 @@
 						<span>SASS</span>
 					</div>
 					<div class="text-holder">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam asperiores nulla error, itaque recusandae distinctio delectus doloribu</p>
+						<p>The simple one page website for Travel Agency companies with some single blog page and blog list page.</p>
+					</div>
+				</div>
+			</div>
+			<div id="open" class="full-info second-content">
+				<img src="images/img7.png" alt="">
+				<div class="content">
+					<h2 class="title">BlossomPin- By Rara Theme</h2>
+					<div class="tags">
+						<span>HTMl</span>
+						<span>CSS</span>
+						<span>JQUERY</span>
+					</div>
+					<div class="text-holder">
+						<p>I was given task to built this beautiful layout home page when i was doing internship in Codewing solution. This site has been already published and this belongs to raratheme.</p>
+					</div>
+				</div>
+			</div>
+			<div id="open" class="full-info third-content">
+				<img src="images/img6.png" alt="">
+				<div class="content">
+					<h2 class="title">Prodisious-portfolio</h2>
+					<div class="tags">
+						<span>HTMl</span>
+						<span>CSS</span>
+						<span>JQUERY</span>
+						<span>SASS</span>
+					</div>
+					<div class="text-holder">
+						<p>This is a simple and elegant web site that i have build for one of my good friend.</p>
 					</div>
 				</div>
 			</div>
@@ -285,7 +283,7 @@
 			</div>
 		</section>
 		<!-- Portfolio Section -->
-		<footer class="site-footer">
+		<footer id="footer-section" class="site-footer">
 			<div class="container">
 				<header class="entry-header">
 					<h2 class="entry-title wow fadeInLeft" data-wow-delay='0.3s'>Contact</h2>
@@ -293,16 +291,16 @@
 					data-wow-delay='0.4s'>Have a question or want to work together?</p>
 				</header>
 				<div class="footer-t">
-					<form action="#" class="contact-form wow fadeIn" 
+					<form action="contact-form.php" method="post" class="contact-form wow fadeIn" 
 						data-wow-delay='0.8s' data-wow-offset="80">
 						<p>
 							<label>
-								<span class="your-name"><input type="text" placeholder="Name"></span>
+								<span class="your-name"><input type="text" name="name"placeholder="Name"></span>
 							</label>
 						</p>
 						<p>
 							<label>
-								<span class="your-email"><input type="text" placeholder="Enter your email"></span>
+								<span class="your-email"><input type="text" name="email" placeholder="Enter your email"></span>
 							</label>
 						</p>
 						<p>
@@ -311,14 +309,13 @@
 							</label>
 						</p>
 						<p>
-							<input type="submit" placeholder="submit">
+							<input type="submit" name="button" placeholder="submit">
 						</p>
 					</form>
 					<section class="widget widget-social-link wow fadeInLeft" data-wow-delay='0.3s'>
 						<ul class="social-network">
-							<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-							<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-							<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+							<li><a href="https://www.facebook.com/pawon.gurung.6"><i class="fab fa-facebook-square"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/pawan-gurung-10b6b2178/"><i class="fab fa-linkedin"></i></a></li>
 						</ul>
 					</section>
 				</div>

@@ -920,7 +920,8 @@ a:hover, a:active {
         color: #0e68cf; }
         .main-navigation ul li .contact:hover, .main-navigation ul li .contact:focus {
           color: #fff;
-          border-color: #fff; }
+          border-color: #fff;
+          text-decoration: none; }
       .main-navigation ul li:last-child {
         margin: 0; }
 
@@ -1076,7 +1077,7 @@ a:hover, a:active {
   margin-left: 5.1282%; }
 
 .about {
-  margin: 100px 0; }
+  padding-top: 100px; }
   .about .section-header {
     margin-bottom: 100px; }
     .about .section-header .section-title {
@@ -1216,7 +1217,7 @@ a:hover, a:active {
   .about .about-description .container .description .btns a {
     padding: 14px 22px; } }
 .skills {
-  margin-bottom: 80px; }
+  padding-top: 80px; }
   .skills .section-header {
     margin-bottom: 100px; }
     .skills .section-header .section-title {

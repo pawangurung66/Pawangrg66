@@ -31,7 +31,7 @@ jQuery(document).ready(function($){
 		$('.third-content').hide();
 		$('.fourth-content').hide();
 	});
-	//End of Porfolio btn function.
+	/*-------End of Porfolio btn function-------.*/
 
 
 	//Toggle btn menu
@@ -40,9 +40,9 @@ jQuery(document).ready(function($){
   		$('body').toggleClass('open-menu')
   	});
 
-  	
-  	// When we click on navigation link it should close the menu and
-  	//it should change the Btn close menu again to Hamberger menu-----
+  	/*
+  	When we click on navigation link it should close the menu and
+  	it should change the Btn close menu again to Hamberger menu-----*/
   	
   	$('.main-navigation li a').click(function(){
   		$('#toggle-btn').toggleClass('active');
@@ -54,7 +54,9 @@ jQuery(document).ready(function($){
   		$('body').removeClass('open-menu')
   	});
 
-  	// End of Toggle menu js
+  	/*----End of Toggle menu js------*/
+
+  	/*--Isotope function has dependencies on animate.css and wo.js..*/
 
 	var $grid = $("body .portfolio .row").isotope({
 	  itemSelector: ".portfolio .row .col",
@@ -74,7 +76,9 @@ jQuery(document).ready(function($){
 
 })
 
-//To the top btn js
+/*--------End of Isotope funciton--------*/
+
+//To the top btn js. Has no dependencies.
 
 $(document).ready(function($){
 	$(window).scroll(function(){
@@ -91,5 +95,20 @@ $(document).ready(function($){
 
 });
 
+	//---End of To the top btn js-----
 
-	//End of To the top btn js
+//Smooth scrolling on navigation click. Has no dependencies.
+
+$(document).ready(function($){
+	var scrollLink = $('.main-navigation ul li a');
+
+	//smooth scrolling
+
+	scrollLink.click(function(e){
+		e.preventDefault();
+		$('body, html').animate({
+			scrollTop: $(this.hash).offset().top
+		}, 800)
+	})
+
+});
