@@ -37,7 +37,7 @@ jQuery(document).ready(function($){
 	//Toggle btn menu
 	$('#toggle-btn').click(function(){
   		$('#toggle-btn').toggleClass('active');
-  		$('body').toggleClass('open-menu')
+  		$('body').toggleClass('open-menus')
   	});
 
   	/*
@@ -46,12 +46,12 @@ jQuery(document).ready(function($){
   	
   	$('.main-navigation li a').click(function(){
   		$('#toggle-btn').toggleClass('active');
-  		$('body').removeClass('open-menu')
+  		$('body').removeClass('open-menus')
   	});
 
-  	$('.overlay').click(function(){
+  	$('.open-menus .overlay').click(function(){
   		$('#toggle-btn').toggleClass('active');
-  		$('body').removeClass('open-menu')
+  		$('body').removeClass('open-menus')
   	});
 
   	/*----End of Toggle menu js------*/

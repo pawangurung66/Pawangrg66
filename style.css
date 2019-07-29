@@ -303,7 +303,18 @@ big {
   background-attachment: fixed;
   height: 100vh; }
 
+@media (max-width: 767px) {
+  .open-menu {
+    overflow-y: hidden; } }
 .open-menu .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); }
+
+.open-menus .overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -1006,7 +1017,7 @@ a:hover, a:active {
       -webkit-transform: rotate(-45deg) translate(7px, -7px);
       -moz-transform: rotate(-45deg) translate(7px, -7px);
       transform: rotate(-45deg) translate(7px, -7px); } }
-.open-menu .main-navigation {
+.open-menus .main-navigation {
   display: block;
   top: 0; }
 
@@ -1556,6 +1567,9 @@ a:hover, a:active {
     -webkit-transition: 0.6s;
     -moz-transition: 0.6s;
     transition: 0.6s; }
+    @media (max-width: 767px) {
+      .portfolio .full-info {
+        width: 100%; } }
     .portfolio .full-info img {
       vertical-align: top; }
     .portfolio .full-info .content {
@@ -1574,10 +1588,18 @@ a:hover, a:active {
           padding: 7px 18px;
           background: #0e68cf;
           margin-right: 12px; }
+          @media (max-width: 767px) {
+            .portfolio .full-info .content .tags span {
+              margin: 0 12px 12px 0; } }
       .portfolio .full-info .content .text-holder {
         font-size: 0.8rem;
         line-height: 1.4rem; }
         .portfolio .full-info .content .text-holder p {
           margin: 0; }
+        .portfolio .full-info .content .text-holder a {
+          color: #0e68cf; }
+          .portfolio .full-info .content .text-holder a:hover {
+            text-decoration: none;
+            color: #509cf3; }
 
 /*# sourceMappingURL=style.css.map */
