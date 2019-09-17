@@ -1318,13 +1318,23 @@ a:hover, a:active {
             @media (max-width: 767px) {
               .skills .skills-holder .skill .bar .css .bar-title {
                 padding: 4px 30px; } }
+        .skills .skills-holder .skill .bar .bootstrap {
+          width: 80%; }
+          @media (max-width: 767px) {
+            .skills .skills-holder .skill .bar .bootstrap {
+              width: 82%; } }
+          .skills .skills-holder .skill .bar .bootstrap .bar-title {
+            padding: 4px 54px; }
+            @media (max-width: 767px) {
+              .skills .skills-holder .skill .bar .bootstrap .bar-title {
+                padding: 4px 20px; } }
         .skills .skills-holder .skill .bar .sass {
           width: 70%; }
           .skills .skills-holder .skill .bar .sass .bar-title {
             padding: 4px 50px; }
             @media (max-width: 767px) {
               .skills .skills-holder .skill .bar .sass .bar-title {
-                padding: 4px 26px; } }
+                padding: 4px 29px; } }
         .skills .skills-holder .skill .bar .js {
           width: 50%; }
           .skills .skills-holder .skill .bar .js .bar-title {
@@ -1524,6 +1534,10 @@ a:hover, a:active {
         background-position: top; }
       .portfolio .row .col .b-4 {
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/img11.png);
+        background-size: cover;
+        background-position: top; }
+      .portfolio .row .col .b-5 {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/img4.jpg);
         background-size: cover;
         background-position: top; }
       .portfolio .row .col .holder {

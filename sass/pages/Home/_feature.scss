@@ -117,6 +117,21 @@
 
 				}//css
 
+				.bootstrap{
+					width: 80%;
+					@include media(xs){
+						width: 82%;
+					}
+
+					.bar-title{
+						padding: 4px 54px;
+						@include media(xs){
+							padding: 4px 20px;
+						}
+					}
+
+				}//css
+
 				.sass{
 					width: 70%;
 					@include media(xs){
@@ -126,7 +141,7 @@
 					.bar-title{
 						padding: 4px 50px;
 						@include media(xs){
-							padding: 4px 26px;
+							padding: 4px 29px;
 						}
 					}
 

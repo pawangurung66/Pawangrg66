@@ -9,9 +9,9 @@ jQuery(document).ready(function($){
 		$('.first-content').show();
 	});
 
-	$('.row .col .holder #second-btn').click(function(){
+	$('.row .col .holder #fifth-btn').click(function(){
 		$('body').addClass('open-menu');
-		$('.second-content').show();
+		$('.fifth-content').show();
 	});
 
 	$('.row .col .holder #third-btn').click(function(){
@@ -27,7 +27,7 @@ jQuery(document).ready(function($){
 	$('.overlay').click(function(){
 		$('body').removeClass('open-menu');
 		$('.first-content').hide();
-		$('.second-content').hide();
+		$('.fifth-content').hide();
 		$('.third-content').hide();
 		$('.fourth-content').hide();
 	});
@@ -56,7 +56,7 @@ jQuery(document).ready(function($){
 
   	/*----End of Toggle menu js------*/
 
-  	/*--Isotope function has dependencies on animate.css and wo.js..*/
+  	/*--Isotope function has no dependencies */
 
 	var $grid = $("body .portfolio .row").isotope({
 	  itemSelector: ".portfolio .row .col",
@@ -100,15 +100,13 @@ $(document).ready(function($){
 //Smooth scrolling on navigation click. Has no dependencies.
 
 $(document).ready(function($){
-	var scrollLink = $('.main-navigation ul li a');
+	var scrollLink = $('.site-header .header-b .navbar .navbar-nav .nav-item .nav-link');
 
 	//smooth scrolling
-
 	scrollLink.click(function(e){
 		e.preventDefault();
 		$('body, html').animate({
 			scrollTop: $(this.hash).offset().top
-		}, 800)
+		}, 600)
 	})
-
 });
